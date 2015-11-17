@@ -22,7 +22,7 @@ void deriv(double* x,double dx, int N){
   double a = x[0];
   for(int i = 1; i <= N-1; i++){
   double b = x[i];
-  x[i] = ((x[i+1]-a)/2*dx);
+  x[i] = ((x[i+1]-a)/(2*dx));
   a = b;
   }
   x[0] = 0;
